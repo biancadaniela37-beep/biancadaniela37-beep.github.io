@@ -6,62 +6,29 @@
 <title>❤️</title>
 
 <style>
-html,body{
-    margin:0;
-    padding:0;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    background:#000;
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
-img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    display:block;
-    user-select:none;
-}
-
-#play{
-    position:fixed;
-    inset:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:rgba(0,0,0,.15);
-    color:white;
-    font-size:28px;
-    cursor:pointer;
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    cursor: pointer;
 }
 </style>
-
 </head>
 
 <body>
 
-<img src="poza.png" alt="">
-
-<div id="play">▶️ Atinge ecranul pentru a porni melodia</div>
-
-<audio id="music" autoplay loop>
-<source src="https://www.youtube.com/watch?v=vNShGL3PB3M" type="audio/mpeg">
-</audio>
-
-<script>
-
-const audio=document.getElementById("music");
-const play=document.getElementById("play");
-
-audio.play().then(()=>{
-play.style.display="none";
-}).catch(()=>{});
-
-play.onclick=()=>{
-window.location.href="https://youtu.be/vNShGL3PB3M?is=VdCP8MY-iL0a5Oo4";
-}
-
-</script>
+<a href="https://youtu.be/vNShGL3PB3M?is=VdCP8MY-iL0a5Oo4">
+    <img src="poza.png" alt="">
+</a>
 
 </body>
 </html>
